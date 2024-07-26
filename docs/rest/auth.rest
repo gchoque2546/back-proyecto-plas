@@ -1,0 +1,36 @@
+### Register
+POST Http://127.0.0.1:8000/api/v1/auth/register
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name":"juan",
+    "email":"juan@mail.com",
+    "password":"juan54321",
+    "c_password":"juan54321"
+}
+
+### Login
+POST Http://127.0.0.1:8000/api/v1/auth/login
+Accept: application/json
+Content-Type: application/json
+
+{
+    "email":"juan@mail.com",
+    "password":"juan54321"
+}
+
+### Perfil
+GET Http://127.0.0.1:8000/api/user
+Accept: application/json
+Authorization: Bearer 4|x9hXqHGp6CEdD1iMGFxo6mc2XR0xgUy0S1HtS4QA198eb021
+
+### Perfil 2
+GET Http://127.0.0.1:8000/api/v1/auth/perfil
+Accept: application/json
+Authorization: Bearer 5|K1ZoFTyKoM6Qq6U7Nm2zRTTxQuKrgyaQZN994ygk91203547
+
+### Logout
+POST Http://127.0.0.1:8000/api/v1/auth/logout
+Accept: application/json
+Authorization: Bearer 5|K1ZoFTyKoM6Qq6U7Nm2zRTTxQuKrgyaQZN994ygk91203547
