@@ -1,0 +1,28 @@
+### Ver Categoria
+GET http://127.0.0.1:8000/api/categoria
+
+### Guardar Categoria
+POST http://127.0.0.1:8000/api/categoria
+Content-Type: application/json
+Accept: application/json
+
+{
+    "nombre": "PETREOS",
+    "detalle": "Derivados de piedra que se obtienen de la naturaleza"
+}
+
+### Mostrar Categoria
+GET http://127.0.0.1:8000/api/categoria/1
+
+### Modificar
+PUT http://127.0.0.1:8000/api/categoria/1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "nombre": "LADRILLOS",
+    "detalle": "Diferentes tipos de Ladrillo para Construccion"
+}
+
+### Eliminar
+DELETE http://127.0.0.1:8000/api/categoria/2

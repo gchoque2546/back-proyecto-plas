@@ -1,0 +1,28 @@
+### Ver Clase
+GET http://127.0.0.1:8000/api/clase
+
+### Guardar Clase
+POST http://127.0.0.1:8000/api/clase
+Content-Type: application/json
+Accept: application/json
+
+{
+    "nombre": "CONSTRUCCION",
+    "detalle": "Desde casas unifamiliares, multifamiliares y edificios comerciales, manejando todo el proceso desde la obra bruta hasta la obra fina"
+}
+
+### Mostrar Clase
+GET http://127.0.0.1:8000/api/clase/2
+
+### Modificar
+PUT http://127.0.0.1:8000/api/clase/2
+Content-Type: application/json
+Accept: application/json
+
+{
+    "nombre": "PROYECTOS DE OBRA",
+    "detalle": "Desarrollo de planos, Especificaciones Técnicas y Presupuestos detallados"
+}
+
+### Eliminar
+DELETE http://127.0.0.1:8000/api/clase/2
