@@ -1,0 +1,15 @@
+### Listar Producto
+GET http://127.0.0.1:8000/api/producto
+
+### Guardar Producto
+POST http://127.0.0.1:8000/api/producto
+Content-Type: application/json
+Accept: application/json
+
+{
+    "nombre": "Estuco Vichaya",
+    "precio": 35.50,
+    "stock": 20.000,
+    "categoria_id": 2,
+    "descripcion": "Estuco de primera calidad blanco y fino en su presentacion de 25kg"
+}

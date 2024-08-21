@@ -1,0 +1,14 @@
+### Listar Producto
+GET http://127.0.0.1:8000/api/servicio
+
+### Guardar Producto
+POST http://127.0.0.1:8000/api/servicio
+Content-Type: application/json
+Accept: application/json
+
+{
+    "nombre": "OBRA BRUTA",
+    "precio": 1800,
+    "clase_id": 1,
+    "descripcion": "Parte de la edificacion que abarca desde los cimientos hasta la techumbre, incluida la totalidad de su estructura y muros divisorios"
+}
