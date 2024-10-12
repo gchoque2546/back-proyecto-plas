@@ -23,7 +23,10 @@ Route::prefix('/v1/auth')->group(function(){
         Route::post('/logout', [AuthController::class, "funSalir"]);
     });
 });
+
 Route::apiResource("categoria", CategoriaController::class);
 Route::apiResource("clase", ClaseController::class);
 Route::apiResource("producto", ProductoController::class);
 Route::apiResource("servicio", ServicioController::class);
+Route::post("producto/{id}/actualizar-imagen",[ProductoController::class, "actualizarImagen"]);
+Route::post("servicio/{id}/actualizar-imagen",[ServicioController::class, "actualizarImagen"]);

@@ -13,3 +13,24 @@ Accept: application/json
     "categoria_id": 2,
     "descripcion": "Estuco de primera calidad blanco y fino en su presentacion de 25kg"
 }
+
+### Mostrar Producto
+GET http://127.0.0.1:8000/api/producto/1
+Accept: application/json
+
+### Modificar Producto
+PUT  http://127.0.0.1:8000/api/producto/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nombre": "CEMENTO VIACHA",
+  "precio": 50.08,
+  "stock": 70000,
+  "descripcion": "Cemento IP-40 con mejor rendimiento en dosificaciones de cualquier tipo de hotmigon y mortero",
+  "estado": true,
+  "categoria_id": 2
+}
+
+### Eliminar Producto
+DELETE http://127.0.0.1:8000/api/producto/1

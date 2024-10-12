@@ -1,7 +1,7 @@
-### Listar Producto
+### Listar Servicio
 GET http://127.0.0.1:8000/api/servicio
 
-### Guardar Producto
+### Guardar Servicio
 POST http://127.0.0.1:8000/api/servicio
 Content-Type: application/json
 Accept: application/json
@@ -12,3 +12,23 @@ Accept: application/json
     "clase_id": 1,
     "descripcion": "Parte de la edificacion que abarca desde los cimientos hasta la techumbre, incluida la totalidad de su estructura y muros divisorios"
 }
+
+### Mostrar Servicio
+GET http://127.0.0.1:8000/api/servicio/1
+Accept: application/json
+
+### Modificar Servicio
+PUT  http://127.0.0.1:8000/api/servicio/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nombre": "PLANOS DE UNA VIVIENDA",
+  "precio": 2200.00,
+  "descripcion": "Plano arquitectonico de una casa mostrando una vista cenital de cada planta de la vivienda, representando paredes escaleras y demas elementos arquitectonicos",
+  "estado": true,
+  "clase_id": 2
+}
+
+### Eliminar Servicio
+DELETE http://127.0.0.1:8000/api/servicio/1
